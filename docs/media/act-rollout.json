@@ -1,0 +1,81 @@
+{
+  "checkpoint": "/home/sra/ksagar/abc-act/checkpoints/bottles-live-recovery/eval-step-2000.pt",
+  "checkpoint_step": 2000,
+  "checkpoint_sha256": "e9da76b22b66ac5af6de6f17ac1d63cfd6b03ded18323b16e103a2fdaa76f784",
+  "seed": 1,
+  "episode": null,
+  "steps": 684,
+  "max_steps": 2100,
+  "peak_reward": 1.0,
+  "success": true,
+  "task_eval": {
+    "reward": 1.0,
+    "success": true,
+    "num_bottles_in_bin": 4,
+    "num_active_bottles": 4,
+    "max_bottles_in_bin_so_far": 4,
+    "ever_success": true,
+    "closest_radial_margin": 0.0878598541021347,
+    "closest_height_margin": 0.14945071935653687,
+    "closest_upper_height_margin": 0.2630905210971832,
+    "bottle_in_bin_mask": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "bottles_in_bin": [
+      "bottle_1",
+      "bottle_2",
+      "bottle_3",
+      "bottle_4"
+    ],
+    "bottle_names": [
+      "bottle_1",
+      "bottle_2",
+      "bottle_3",
+      "bottle_4"
+    ],
+    "success_count": 4,
+    "bin_bottom_y": -0.09741779416799545,
+    "bin_top_y": 0.13728001713752747,
+    "bin_radius_bottom": 0.07958318293094635,
+    "bin_radius_top": 0.10172424837946892,
+    "bottle_center_offsets": [
+      [
+        0.0,
+        0.0,
+        0.08254334330558777
+      ],
+      [
+        0.0,
+        0.0,
+        0.07294660061597824
+      ],
+      [
+        0.0,
+        0.0,
+        0.07466224581003189
+      ],
+      [
+        0.0,
+        0.0,
+        0.08882222324609756
+      ]
+    ],
+    "bottle_reaches": [
+      0.10703597217798233,
+      0.09066075831651688,
+      0.08598043769598007,
+      0.12175151705741882
+    ]
+  },
+  "ever_success": true,
+  "success_hold_steps": 90,
+  "consecutive_success_steps": 90,
+  "camera_backend": "mujoco",
+  "execute_actions": 20,
+  "temporal_ensemble": null,
+  "video": "outputs/act-bottle-task-fresh-seed1.mp4",
+  "elapsed_seconds": 5.935704588016961
+}

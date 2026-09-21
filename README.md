@@ -4,6 +4,24 @@ Imitation learning experiments using ABC data and environments, with ACT as
 the first policy. The single-file ACT implementation includes episode loading,
 normalization, training, validation, and checkpoints.
 
+## Policy rollout
+
+[![ACT policy placing all four bottles in the bin](docs/media/act-rollout.gif)](docs/media/act-rollout.mp4)
+
+**Trained ACT policy completing the bottle task in MuJoCo.** This is a fresh
+randomized scene (seed 1), controlled from live camera images and robot state.
+All four bottles reach the bin, and success remains true for 90 consecutive
+actions (3 seconds) while the policy continues controlling the robot.
+
+[Watch or download the full 22.8-second MP4](https://raw.githubusercontent.com/vovw/abc-act/main/docs/media/act-rollout.mp4)
+· [Recorded rollout metrics](docs/media/act-rollout.json)
+· [Training recipe and hyperparameters](docs/act-training.md)
+
+The video uses the live-rendered fine-tune at step 2,000, with 20-action chunks
+and `z=0`. The looping preview preserves the original playback speed. This is
+one successful rollout; the development check succeeded on 2 of 3 fresh seeds,
+with the six-bottle scene still failing.
+
 ## Structure
 
 ```text
