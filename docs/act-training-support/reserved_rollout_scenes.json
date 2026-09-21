@@ -1,0 +1,23 @@
+[
+  {
+    "episode": "episode_019e1cc2-aa63-7db1-90c6-9dc2ed72070d",
+    "steps": 1438,
+    "peak_reward": 1.0,
+    "success": true,
+    "state_tracking_mae": 0.0004695255691850824
+  },
+  {
+    "episode": "episode_019e1cd6-20cc-7327-b909-bacdc5d0c16d",
+    "steps": 1202,
+    "peak_reward": 1.0,
+    "success": true,
+    "state_tracking_mae": 0.00016574288851448467
+  },
+  {
+    "episode": "episode_019e1cd9-bd11-77aa-8460-9ad4f3438ab2",
+    "steps": 1038,
+    "peak_reward": 1.0,
+    "success": true,
+    "state_tracking_mae": 0.0007520822275962148
+  }
+]

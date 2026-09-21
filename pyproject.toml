@@ -1,0 +1,38 @@
+[project]
+name = "abc-act"
+version = "0.1.0"
+description = "Imitation learning experiments with ABC data and environments"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "abc-minimal",
+    "numpy>=2.5.3",
+    "torch==2.11.0+cu128 ; sys_platform == 'linux'",
+    "torchvision==0.26.0+cu128 ; sys_platform == 'linux'",
+]
+
+[project.scripts]
+abc-act = "abc_act:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+override-dependencies = ["mujoco~=3.8.0", "tyro>=1.0.5"]
+
+[tool.uv.sources]
+abc-minimal = { path = "abc", editable = true }
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+torchcodec = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
